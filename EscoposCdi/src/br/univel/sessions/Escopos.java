@@ -28,13 +28,15 @@ public class Escopos extends HttpServlet {
 
 				.append("<html><head></head><body>")
 
-				.append("<table<tbody>")
+				.append("<table><tbody>")
 
-				.append("<tr><th>" + "Aplicação" + "</th><td>" + contApp.getNumero() + "</td></tr><br>")
-				.append("<tr><th>" + "Sessão" + "</th><td>" + contSes.getNumero() + "</td></tr><br>")
-				.append("<tr><th>" + "Requisição" + "</th><td>" + contReq.getNumero() + "</td></tr>")
+				.append("<tr><th>" + "Aplicação" + "</th><td>" + contApp.getNumero() + "</td></tr>")
+				.append("<tr><th>" + "Sessão" + "</th><td>" + contSes.getNumero() + "</td></tr>")
+				.append("<tr><th>" + "Rquisição" + "</th><td>" + contReq.getNumero() + "</td></tr>")
 
-				.append("</tbody></table>").append("</body></html>")
+				.append("</tbody></table>")
+
+				.append("</body></html>")
 
 				.flush();
 	}
